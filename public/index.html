@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Fresca | Tu hogar más fresco, tu consumo bajo control</title>
+    <meta name="description" content="Casa Fresca te ayuda a mantener tu hogar fresco en Lima y a entender cuánto consumes de electricidad.">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="assets/scripts/main.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+        <a href="#inicio" class="brand">Casa Fresca</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">☰</button>
+        <nav class="nav" id="nav" aria-label="Principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#como-funciona">Cómo funciona</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#preguntas">Preguntas frecuentes</a>
+            <a href="#inicio" class="btn btn--primary btn--small">Probar gratis</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="inicio">
+        <div class="container hero__inner">
+            <div class="hero__text">
+                <h1>Tu hogar más fresco, tu consumo bajo control</h1>
+                <p>Casa Fresca te dice qué hacer en cada momento para estar cómodo en casa y te muestra cuánto costaría cada opción, sin obras ni gastos extra.</p>
+                <a href="#como-funciona" class="btn btn--primary">Empezar gratis</a>
+                <p class="note">Pensada para inquilinos y estudiantes de Lima Metropolitana.</p>
+            </div>
+
+            <article class="summary" aria-label="Ejemplo de resumen del hogar">
+                <h2 class="summary__title">Resumen de hoy</h2>
+                <div class="summary__row">
+                    <div>
+                        <span class="label">Temperatura exterior</span>
+                        <strong class="value value--orange">29 °C</strong>
+                    </div>
+                    <div>
+                        <span class="label">Consumo estimado</span>
+                        <strong class="value value--green">4,2 kWh</strong>
+                    </div>
+                </div>
+                <div class="tip">
+                    <span class="label">Recomendación</span>
+                    <p>Baja las cortinas de la ventana oeste y abre la ventana de la sala después de las 7 p. m.</p>
+                    <button class="link-btn" id="whyBtn" aria-expanded="false" aria-controls="whyText">¿Por qué?</button>
+                    <p class="why" id="whyText" hidden>Estimación basada en la temperatura exterior y en los datos que ingresas de tu vivienda. Es un ejemplo.</p>
+                </div>
+                <p class="note">Valores ilustrativos, no son mediciones reales.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="beneficios">
+        <div class="container">
+            <h2 class="section__title">Beneficios</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card__icon" aria-hidden="true">🏠</div>
+                    <h3>Recomendaciones para tu hogar</h3>
+                    <p>Sabes cuándo abrir ventanas, bajar cortinas o usar el ventilador según tu vivienda.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon" aria-hidden="true">💡</div>
+                    <h3>Costo de tu electricidad</h3>
+                    <p>Compara consumo, costo y emisiones estimadas de cada alternativa antes de decidir.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon" aria-hidden="true">📊</div>
+                    <h3>Más claridad en tu consumo</h3>
+                    <p>Ves de dónde salen los datos y qué supuestos se usan en cada estimación.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gray" id="como-funciona">
+        <div class="container">
+            <h2 class="section__title">Cómo funciona</h2>
+            <ol class="steps">
+                <li><span class="steps__num">1</span><div><h3>Registra tu vivienda</h3><p>Cuéntanos tu distrito y cómo es tu cuarto o departamento.</p></div></li>
+                <li><span class="steps__num">2</span><div><h3>Elige tus equipos</h3><p>Indica el ventilador o aire acondicionado que tienes. Vincular dispositivos es opcional.</p></div></li>
+                <li><span class="steps__num">3</span><div><h3>Revisa las recomendaciones</h3><p>Recibe qué hacer en cada momento y pausa o deshaz la automatización cuando quieras.</p></div></li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="section" id="segmentos">
+        <div class="container">
+            <h2 class="section__title">¿Para quién es?</h2>
+            <div class="cards cards--two">
+                <article class="card">
+                    <h3>Inquilinos de departamentos pequeños</h3>
+                    <p>No puedes hacer obras, pero sí decidir mejor tus hábitos y ver cómo impactan en tu recibo de luz.</p>
+                </article>
+                <article class="card">
+                    <h3>Estudiantes que estudian desde casa</h3>
+                    <p>Pasas horas en casa durante el calor y quieres estudiar cómodo sin disparar el gasto.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gray" id="preguntas">
+        <div class="container container--narrow">
+            <h2 class="section__title">Preguntas frecuentes</h2>
+            <details class="faq">
+                <summary>¿De dónde provienen los datos?</summary>
+                <p>De lo que tú ingresas sobre tu vivienda y de fuentes meteorológicas externas, que muestran su fuente y hora. Las mediciones se distinguen de las estimaciones.</p>
+            </details>
+            <details class="faq">
+                <summary>¿Cómo se calcula el consumo estimado?</summary>
+                <p>Con tus equipos, sus horas de uso, la configuración y la tarifa. En "¿Por qué?" ves los datos y supuestos usados.</p>
+            </details>
+            <details class="faq">
+                <summary>¿Qué dispositivos son compatibles?</summary>
+                <p>La compatibilidad se está evaluando. Si no tienes un equipo compatible, igual recibes recomendaciones y recordatorios.</p>
+            </details>
+            <details class="faq">
+                <summary>¿Cómo desactivo las automatizaciones?</summary>
+                <p>Puedes pausarlas o deshacer una acción en cualquier momento desde la sección Auto de la app.</p>
+            </details>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <strong>Casa Fresca</strong>
+        <nav class="footer__links" aria-label="Legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Contacto</a>
+            <a href="#">Términos de uso</a>
+        </nav>
+        <p class="footer__note">Los datos que aparecen como ejemplo no son mediciones reales.</p>
+    </div>
+</footer>
+
+</body>
+</html>
