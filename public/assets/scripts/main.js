@@ -1,6 +1,6 @@
 // Menú móvil
 const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
+const nav = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function () {
     const abierto = nav.classList.toggle("is-open");
