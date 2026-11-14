@@ -4,10 +4,10 @@
 
 Casa Fresca es una propuesta de emprendimiento digital que ayuda a gestionar el confort térmico y a entender el consumo eléctrico en hogares de Lima Metropolitana. Este repositorio contiene la **Landing Page** del proyecto.
 
-> Trabajo final del curso **1ASI0385 – IHC y Tecnologías Móviles** 
-> Docente: Salazar Ruiz, Kevin Edgar
-> Universidad Peruana de Ciencias Aplicadas (UPC) · Facultad de Ingeniería
-
+- **Curso:** 1ASI0385 – IHC y Tecnologías Móviles
+- **Universidad:** Universidad Peruana de Ciencias Aplicadas (UPC) · Facultad de Ingeniería
+- **Docente:** Salazar Ruiz, Kevin Edgar
+  
 ## Información del proyecto
 
 Casa Fresca es una aplicación móvil que orienta al usuario sobre ventilación, protección solar y uso de equipos (ventiladores, aire acondicionado), considerando las características de su vivienda y sus preferencias. Además, muestra el consumo, el costo y las emisiones estimadas de cada alternativa antes de decidir.
