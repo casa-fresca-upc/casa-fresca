@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Fresca | Tu hogar más fresco, tu consumo bajo control</title>
+    <title>Casa Fresca</title>
     <meta name="description" content="Casa Fresca te ayuda a mantener tu hogar fresco en Lima y a entender cuánto consumes de electricidad.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="assets/scripts/main.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <a class="logo" href="#hero">Casa Fresca</a>
+    <section id="notification">
+        <p>Los datos que aparecen como ejemplo no son mediciones reales</p>
+    </section>
 
-        <button id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+    <header>
+        <a href="#hero"><img class="logo" src="assets/images/logo.png" width="48" alt="Logo de Casa Fresca"></a>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
 
         <nav id="menu">
             <ul>
@@ -24,37 +31,44 @@
                 <li><a href="#benefits">Beneficios</a></li>
                 <li><a href="#faq">Preguntas frecuentes</a></li>
             </ul>
-            <button class="cta1">Probar gratis</button>
         </nav>
+
+        <div class="botones">
+            <button class="cta1">Probar gratis</button>
+        </div>
     </header>
 
     <section id="hero">
-        <div class="texto">
+        <div class="hero-text">
+            <p>BIENVENIDO A CASA FRESCA</p>
             <h1>Tu hogar más fresco, tu consumo bajo control</h1>
             <p>Casa Fresca te dice qué hacer en cada momento para estar cómodo en casa y te muestra cuánto costaría cada opción, sin obras ni gastos extra.</p>
-            <button class="cta1">Empezar gratis</button>
-            <p class="nota">Pensada para inquilinos y estudiantes de Lima Metropolitana.</p>
+            <div class="botones">
+                <button class="cta1">Empezar gratis</button>
+                <a href="#how"><button class="cta2">Cómo funciona</button></a>
+            </div>
+            <p class="note">Pensada para inquilinos y estudiantes de Lima Metropolitana.</p>
         </div>
 
-        <div class="resumen">
+        <div class="summary" aria-label="Ejemplo de resumen del hogar">
             <h2>Resumen de hoy</h2>
-            <div class="datos">
+            <div class="summary-row">
                 <div>
-                    <p class="etiqueta">Temperatura exterior</p>
-                    <h3 class="naranja">29 °C</h3>
+                    <p class="label">Temperatura exterior</p>
+                    <h3 class="value orange">29 °C</h3>
                 </div>
                 <div>
-                    <p class="etiqueta">Consumo estimado</p>
-                    <h3 class="verde">4,2 kWh</h3>
+                    <p class="label">Consumo estimado</p>
+                    <h3 class="value green">4,2 kWh</h3>
                 </div>
             </div>
-            <div class="consejo">
-                <p class="etiqueta">Recomendación</p>
+            <div class="tip">
+                <p class="label">Recomendación</p>
                 <p>Baja las cortinas de la ventana oeste y abre la ventana de la sala después de las 7 p. m.</p>
-                <button id="whyBtn" aria-expanded="false" aria-controls="whyText">¿Por qué?</button>
-                <p id="whyText" hidden>Estimación basada en la temperatura exterior y en los datos que ingresas de tu vivienda. Es un ejemplo.</p>
+                <button id="whyBtn" class="link-btn" aria-expanded="false" aria-controls="whyText">¿Por qué?</button>
+                <p id="whyText" class="why" hidden>Estimación basada en la temperatura exterior y en los datos que ingresas de tu vivienda. Es un ejemplo.</p>
             </div>
-            <p class="nota">Valores ilustrativos, no son mediciones reales.</p>
+            <p class="note">Valores ilustrativos, no son mediciones reales.</p>
         </div>
     </section>
 
@@ -62,17 +76,17 @@
         <h2>Beneficios</h2>
         <div class="cards">
             <div class="card">
-                <p class="icono">🏠</p>
+                <div class="icon" aria-hidden="true">🏠</div>
                 <h3>Recomendaciones para tu hogar</h3>
                 <p>Sabes cuándo abrir ventanas, bajar cortinas o usar el ventilador según tu vivienda.</p>
             </div>
             <div class="card">
-                <p class="icono">💡</p>
+                <div class="icon" aria-hidden="true">💡</div>
                 <h3>Costo de tu electricidad</h3>
                 <p>Compara consumo, costo y emisiones estimadas de cada alternativa antes de decidir.</p>
             </div>
             <div class="card">
-                <p class="icono">📊</p>
+                <div class="icon" aria-hidden="true">📊</div>
                 <h3>Más claridad en tu consumo</h3>
                 <p>Ves de dónde salen los datos y qué supuestos se usan en cada estimación.</p>
             </div>
@@ -81,7 +95,7 @@
 
     <section id="how">
         <h2>Cómo funciona</h2>
-        <ol>
+        <ol class="steps">
             <li>
                 <h3>Registra tu vivienda</h3>
                 <p>Cuéntanos tu distrito y cómo es tu cuarto o departamento.</p>
@@ -99,7 +113,7 @@
 
     <section id="segments">
         <h2>¿Para quién es?</h2>
-        <div class="cards dos">
+        <div class="cards two">
             <div class="card">
                 <h3>Inquilinos de departamentos pequeños</h3>
                 <p>No puedes hacer obras, pero sí decidir mejor tus hábitos y ver cómo impactan en tu recibo de luz.</p>
@@ -132,12 +146,14 @@
     </section>
 
     <footer>
-        <h3>Casa Fresca</h3>
-        <ul>
-            <li><a href="#">Privacidad</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Términos de uso</a></li>
-        </ul>
+        <div class="footer-top">
+            <h3>Casa Fresca</h3>
+            <ul>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Términos de uso</a></li>
+            </ul>
+        </div>
         <p>Los datos que aparecen como ejemplo no son mediciones reales.</p>
     </footer>
 
