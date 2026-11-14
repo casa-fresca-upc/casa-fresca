@@ -1,16 +1,16 @@
 // Menú móvil
 const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("menu");
+const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function () {
-    const abierto = nav.classList.toggle("is-open");
+    const abierto = menu.classList.toggle("abierto");
     menuToggle.setAttribute("aria-expanded", abierto);
 });
 
 // Cerrar el menú al elegir una opción
-nav.querySelectorAll("a").forEach(function (enlace) {
+menu.querySelectorAll("a").forEach(function (enlace) {
     enlace.addEventListener("click", function () {
-        nav.classList.remove("is-open");
+        menu.classList.remove("abierto");
         menuToggle.setAttribute("aria-expanded", "false");
     });
 });
