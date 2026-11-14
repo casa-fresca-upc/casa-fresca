@@ -6,7 +6,7 @@ Casa Fresca es una propuesta de emprendimiento digital que ayuda a gestionar el 
 
 > Trabajo final del curso **1ASI0385 – IHC y Tecnologías Móviles**
 > Universidad Peruana de Ciencias Aplicadas (UPC) · Facultad de Ingeniería
-> Docente: Salazar Ruiz, Kevin Edgar
+ Docente: Salazar Ruiz, Kevin Edgar
 
 ## Información del proyecto
 
